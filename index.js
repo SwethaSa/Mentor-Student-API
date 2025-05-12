@@ -38,10 +38,10 @@ app.get("/", function (request, response) {
         }
       </style>
       <h1>
-        MentorsList - <a ${API}/mentors" style="color: #00BFFF; text-shadow:none">${API}/mentors</a><br><br>
-        MentorsByName - <a ${API}/mentors/Ragav" style="color: #00BFFF; text-shadow:none">${API}/mentors/Ragav</a><br><br>
-        StudentsList - <a ${API}/students" style="color: #00BFFF; text-shadow:none">${API}/students</a><br><br>
-        AssignedStudents - <a ${API}/assigned_students" style="color: #00BFFF; text-shadow:none">${API}/assigned_students</a>
+        MentorsList - <a https://mentor-student-api-1-38xn.onrender.com/mentors" style="color: #00BFFF; text-shadow:none">https://mentor-student-api-1-38xn.onrender.com/mentors</a><br><br>
+        MentorsByName - <a https://mentor-student-api-1-38xn.onrender.com/mentors/Ragav" style="color: #00BFFF; text-shadow:none">https://mentor-student-api-1-38xn.onrender.com/mentors/Ragav</a><br><br>
+        StudentsList - <a https://mentor-student-api-1-38xn.onrender.com/students" style="color: #00BFFF; text-shadow:none">https://mentor-student-api-1-38xn.onrender.com/students</a><br><br>
+        AssignedStudents - <a https://mentor-student-api-1-38xn.onrender.com/assigned_students" style="color: #00BFFF; text-shadow:none">https://mentor-student-api-1-38xn.onrender.com/assigned_students</a>
       </h1>
     `);
 });
