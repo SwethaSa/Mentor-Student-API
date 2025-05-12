@@ -20,7 +20,6 @@ console.log("Your MongoDB is connected😍👍");
 app.use(express.json());
 
 app.get("/", function (request, response) {
-  const API = process.env.API;
   response.send(`
       <style>
       body{
@@ -38,10 +37,10 @@ app.get("/", function (request, response) {
         }
       </style>
       <h1>
-        MentorsList - <a https://mentor-student-api-1-38xn.onrender.com/mentors" style="color: #00BFFF; text-shadow:none">https://mentor-student-api-1-38xn.onrender.com/mentors</a><br><br>
-        MentorsByName - <a https://mentor-student-api-1-38xn.onrender.com/mentors/Ragav" style="color: #00BFFF; text-shadow:none">https://mentor-student-api-1-38xn.onrender.com/mentors/Ragav</a><br><br>
-        StudentsList - <a https://mentor-student-api-1-38xn.onrender.com/students" style="color: #00BFFF; text-shadow:none">https://mentor-student-api-1-38xn.onrender.com/students</a><br><br>
-        AssignedStudents - <a https://mentor-student-api-1-38xn.onrender.com/assigned_students" style="color: #00BFFF; text-shadow:none">https://mentor-student-api-1-38xn.onrender.com/assigned_students</a>
+        MentorsList - <a href="https://mentor-student-api-1-38xn.onrender.com/mentors" style="color: #00BFFF; text-shadow:none">https://mentor-student-api-1-38xn.onrender.com/mentors</a><br><br>
+        MentorsByName - <a href="https://mentor-student-api-1-38xn.onrender.com/mentors/Raghav" style="color: #00BFFF; text-shadow:none">https://mentor-student-api-1-38xn.onrender.com/mentors/Raghav</a><br><br>
+        StudentsList - <a href="https://mentor-student-api-1-38xn.onrender.com/students" style="color: #00BFFF; text-shadow:none">https://mentor-student-api-1-38xn.onrender.com/students</a><br><br>
+        AssignedStudents - <a href="https://mentor-student-api-1-38xn.onrender.com/assigned_students" style="color: #00BFFF; text-shadow:none">https://mentor-student-api-1-38xn.onrender.com/assigned_students</a>
       </h1>
     `);
 });
