@@ -20,6 +20,7 @@ console.log("Your MongoDB is connected😍👍");
 app.use(express.json());
 
 app.get("/", function (request, response) {
+  const API = process.env.API;
   response.send(`
       <style>
       body{
@@ -37,10 +38,10 @@ app.get("/", function (request, response) {
         }
       </style>
       <h1>
-        MentorsList - <a href="https://mentor-student-task-jyqdw3c6g-swethasa.vercel.app/mentors" style="color: #00BFFF; text-shadow:none">https://mentor-student-task-jyqdw3c6g-swethasa.vercel.app/mentors</a><br><br>
-        MentorsByName - <a href="https://mentor-student-task-jyqdw3c6g-swethasa.vercel.app/mentors/Ragav" style="color: #00BFFF; text-shadow:none">https://mentor-student-task-jyqdw3c6g-swethasa.vercel.app/mentors/Ragav</a><br><br>
-        StudentsList - <a href="https://mentor-student-task-jyqdw3c6g-swethasa.vercel.app/students" style="color: #00BFFF; text-shadow:none">https://mentor-student-task-jyqdw3c6g-swethasa.vercel.app/students</a><br><br>
-        AssignedStudents - <a href="https://mentor-student-task-jyqdw3c6g-swethasa.vercel.app/assigned_students" style="color: #00BFFF; text-shadow:none">https://mentor-student-task-jyqdw3c6g-swethasa.vercel.app/assigned_students</a>
+        MentorsList - <a ${API}/mentors" style="color: #00BFFF; text-shadow:none">${API}/mentors</a><br><br>
+        MentorsByName - <a ${API}/mentors/Ragav" style="color: #00BFFF; text-shadow:none">${API}/mentors/Ragav</a><br><br>
+        StudentsList - <a ${API}/students" style="color: #00BFFF; text-shadow:none">${API}/students</a><br><br>
+        AssignedStudents - <a ${API}/assigned_students" style="color: #00BFFF; text-shadow:none">${API}/assigned_students</a>
       </h1>
     `);
 });
